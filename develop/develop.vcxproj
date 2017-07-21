@@ -76,6 +76,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="game_flow.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
