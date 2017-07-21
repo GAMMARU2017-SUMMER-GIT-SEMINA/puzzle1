@@ -5,14 +5,16 @@
 void Make_UI();
 void Update_UI();
 
-void mk_map();// 맵 뿌리기
-void mk_property();// 클릭 횟수와 클리어 목적 보여주기
+void mk_map(){}// 맵 뿌리기
+void mk_property(){}// 클릭 횟수와 클리어 목적 보여주기
 
-void up_map();// 맵 업데이트
-void up_property();// 클릭 횟수와 클리어 목적 업데이트
+void up_map(){}// 맵 업데이트
+void up_property(){}// 클릭 횟수와 클리어 목적 업데이트
 
 bool purpose = false; // 목적을 완수 했는가?
 int input; // input받은 것을 저장합니다.
+
+void Ingame_flow();
 
 int main(){
 
@@ -38,7 +40,7 @@ void Ingame_flow(){
 			//x++
 		}
 		else if (input == " "){//스페이스 인풋을 받았을 경우
-			delete_block();//블록을 터지기(삭제)
+			//delete_block();//블록을 터지기(삭제)
 			Update_UI();
 		}
 
@@ -49,8 +51,8 @@ void Ingame_flow(){
 
 
 void Make_UI(){// UI제작
-	mk_map();
-	mk_property();
+
+	// TODO : make map, make property
 }
 //필요한가?
 
